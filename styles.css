@@ -1,0 +1,90 @@
+/* * {
+    padding: 0px;
+    margin: 0px;
+} */
+
+html {
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
+    grid-template-columns: minmax(300px, 500px);
+}
+
+form {
+    background-color: rgb(78, 78, 80);
+    display: grid;
+    justify-content: center;
+    gap: 0.6rem;
+    grid-template-columns: auto;
+    margin-left: 6.5rem;
+    margin-right:6.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#library {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.book-details {
+    background-color: rgb(42, 45, 66);
+    display: grid;
+    justify-content: start;
+    grid-template-columns: minmax(70px, 1fr);
+    overflow: hidden;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.read-status {
+    justify-self: end;
+    align-self: start;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+}
+
+.delete-btn {
+   justify-self: end;
+   margin-bottom: 0.2rem;
+   border-radius: 1rem;
+   font-weight: bold;
+   border: none;
+   align-self: start;
+}
+
+.book-year {
+    display: grid;
+    grid-template-columns: 0.95fr auto auto;
+   
+}
+
+input {
+    border-radius: 0.2rem;
+    border: none;
+    height: 1.1rem;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#submit-btn {
+    color: white;
+    background-color: rgb(42, 45, 66);
+    height: 1.4rem;
+    width: 9rem;
+    justify-self: center;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
