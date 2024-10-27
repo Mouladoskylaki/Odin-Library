@@ -8,19 +8,24 @@ const form = document.querySelector("form");
 
 const myLibrary = [];
 
+class Book {
+      readStatus = false;
+    constructor(title, author, pages, year) {
+      this.title = title;
+      this.author = author;
+      this.pages = pages;
+      this.year = year;
+    //   this.readStatus = false;
+    }
+
+}
+
 const book1 = new Book("The Hobbit", "Tolkien", 295, 1950);
 myLibrary.push(book1);
 const book2 = new Book("Way of Zen", "Alan Watts", 330, 1974);
 myLibrary.push(book2);
 
-function Book(title, author, pages, year) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.year = year;
-}
-
-Book.prototype.readStatus = false;
+// Book.prototype.readStatus = false;
 
 function addBookToLibrary() {
     myLibrary.push(
